@@ -1,32 +1,54 @@
 <!doctype html>
 <html>
   <head>
-    <title>Blackjack 473</title>
+    <title>Blackjack</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="styleshet" src="https://fiddle.jshell.net/css/normalize.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <link rel="stylesheet" href="/stylesheets/styles.css">
+    <script src="/scripts/dist/cards.js"></script>
   </head>
-  <body class="container chat-wrapper jumbotron">
-    <!-- <main> -->
-      <div class="chat-app-container">
-        <header class="chat-header">
-          <h5>Online Chat:</h5>
-        </header>
-        <div class="panel panel-default chat-messages">
-            <ul class="panel-body chat-message-list" data-chat="message-list"></ul>
-        </div>
-        <div class="chat-input">
-          <form data-chat="chat-form" class="cb-container">
-            <div class="input-group">
-              <label for="js-message-input" class="sr-only">Message:</label>
-              <input type="text" class="form-control" data-chat="message-input" autofocus>
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button">Go!</button>
-              </span>
-            </div>
-          </form>
-        </div>
+  <body>
+      <div class="container chat-wrapper jumbotron">
+    <div class= "container">
+      <div class= "row">
+        <div id="dealerHand"></div>
       </div>
-    <!-- </main> -->
+      <div class="row">
+        <div class="bottom-align-text" id="yourHand" ></div>
+      </div>
+      <h3 class="whitefont">
+      <div id="yourScore">Your Score: <span class="digits">0</span> Record: <span id="wins">0</span>&nbsp;/&nbsp;<span id="losses">0</span></div>
+    </h3>
+      <button class="btn btn-primary" id="deal">Deal</button><button class="btn btn-success" id="hitMe">Hit</button><button class="btn btn-warning" id="stand">Stand</button>
+    </div>
+    <!--STart of Chat App-->
+    <main>
+    <div class="chat-app-container">
+      <header class="chat-header">
+        <h5>Online Chat:</h5>
+      </header>
+      <div class="panel panel-default chat-messages">
+          <ul class="panel-body chat-message-list" data-chat="message-list"></ul>
+      </div>
+      <div class="chat-input">
+        <form data-chat="chat-form" class="cb-container">
+          <div class="input-group">
+            <label for="js-message-input" class="sr-only">Message:</label>
+            <input type="text" class="form-control" data-chat="message-input" autofocus>
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Go!</button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+        </main>
+    <!--End of Chat App-->
+  </body>
+  </html>
+  <!--
+
 
     <script src="/scripts/dist/main.js"></script>
 

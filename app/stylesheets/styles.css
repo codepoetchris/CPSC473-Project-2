@@ -108,3 +108,54 @@ ul, ul.panel-body {
   margin-bottom: 0;
   margin-right: 15px;
 }
+
+/*black jack css*/
+body {
+font-family:sans-serif;
+padding:1em;
+}
+#yourHand {
+overflow:hidden;
+position:relative;
+border:1px solid #056B42;
+border-radius:3px;
+background: #800000;
+color:#fff;
+padding:.5em;
+font-size:1em;
+height:30em;
+width:25em;
+}
+.card {
+background:#fff;
+border: 1px solid #000000;
+border-radius:4px;
+font-size: 20pt;
+float: left;
+width:  3.75em;
+height: 5em;
+padding:.1em;
+margin-right:-1em;
+font-family:serif;
+}
+.card:first-child {margin-left:0;}
+
+.Spades, .Clubs {color:black}
+.Diamonds, .Hearts {color:red}
+
+
+#hitMe, #stand {display:none;}
+#yourScore .digits {color:#FFF; font-weight:700}
+#wins {color:#056B42;}
+#losses {color:#F16D17;}
+
+.bottom-align-text
+{
+  position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.whitefont{
+  color: #fff;
+}

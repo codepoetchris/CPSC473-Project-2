@@ -114,16 +114,16 @@ body {
 font-family:sans-serif;
 padding:1em;
 }
-#yourHand {
-overflow:hidden;
+#yourHand, #dealerHand {
+/*overflow:hidden;*/
 position:relative;
-border:1px solid #056B42;
+/*border:1px solid #056B42;*/
 border-radius:3px;
-background: #800000;
-color:#fff;
+/*background: #800000;*/
+/*color:#fff;*/
 padding:.5em;
 font-size:1em;
-height:30em;
+height:12em;
 width:25em;
 }
 .card {
@@ -157,5 +157,9 @@ font-family:serif;
 }
 
 .whitefont{
+  color: #fff;
+}
+
+.hand{
   color: #fff;
 }

@@ -1,34 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Blackjack 473</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blackjack</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{content-for "head"}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/blackjack.css">
+
+    {{content-for "head-footer"}}
   </head>
-  <body class="container chat-wrapper jumbotron">
-    <!-- <main> -->
-      <div class="chat-app-container">
-        <header class="chat-header">
-          <h5>Online Chat:</h5>
-        </header>
-        <div class="panel panel-default chat-messages">
-            <ul class="panel-body chat-message-list" data-chat="message-list"></ul>
-        </div>
-        <div class="chat-input">
-          <form data-chat="chat-form" class="cb-container">
-            <div class="input-group">
-              <label for="js-message-input" class="sr-only">Message:</label>
-              <input type="text" class="form-control" data-chat="message-input" autofocus>
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button">Go!</button>
-              </span>
-            </div>
-          </form>
-        </div>
-      </div>
-    <!-- </main> -->
+  <body class="body-container">
+    {{content-for "body"}}
 
-    <script src="/scripts/dist/main.js"></script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/blackjack.js"></script>
+    <script src="assets/bj_logic.js"></script>
 
+    {{content-for "body-footer"}}
   </body>
 </html>

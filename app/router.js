@@ -12,6 +12,7 @@ Router.map(function() {
     this.route('join');
   });
   this.route('login');
+  this.route('chat');
 });
 
 export default Router;

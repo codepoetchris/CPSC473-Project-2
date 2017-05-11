@@ -40,5 +40,8 @@
     "ember-resolver": "^2.0.3",
     "ember-websockets": "7.0.2",
     "loader.js": "^4.0.1"
+  },
+  "dependencies": {
+    "ws": "^2.3.1"
   }
 }

@@ -12,6 +12,10 @@ Router.map(function() {
     this.route('join');
   });
   this.route('login');
+
+  this.route('socketio', function() {
+    this.route('simple');
+  });
 });
 
 export default Router;

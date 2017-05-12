@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+  count: 0,
 
   init: function() {
     this._super();
@@ -8,7 +9,7 @@ export default Ember.Controller.extend({
     socket.on('open', this.myOpenHandler, this);
     socket.on('message', this.myMessageHandler, this);
     socket.on('close', function(event) {
-        console.log('closed');
+        console.log('closed: ' + event);
     }, this);
   },
   message: '',
@@ -25,7 +26,7 @@ export default Ember.Controller.extend({
   actions: {
     sendButtonPressed: function() {
       var socket = this.get('websockets').socketFor('ws://localhost:7000/');
-      socket.send('Hello Websocket World');
+      socket.send('Hello Websocket World ' + this.count++);
     }
   }
 });

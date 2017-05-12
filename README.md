@@ -1,7 +1,11 @@
 # Blackjack
 
 This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+
+BlackJack is an online web application where a user can play the popular card game and socialize with friends. 
+Want to enhance your blackjack skills without breaking the bank? 
+BlackJack give the user the opportunity to play the game and increase their techniques without the risk of gambling their savings away.
+This application allows the user to play their favorite card game and socialize with others at their convenience.  
 
 ## Prerequisites
 

@@ -13,6 +13,12 @@ body {
   width: 500px;
 }*/
 
+header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: inherit;
+}
+
 .chat-header {
   display: flex;
   color: white;

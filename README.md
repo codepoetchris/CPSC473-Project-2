@@ -1,9 +1,7 @@
 # Blackjack
 
-This README outlines the details of collaborating on this Ember application.
-
-BlackJack is an online web application where a user can play the popular card game and socialize with friends. 
-Want to enhance your blackjack skills without breaking the bank? 
+BlackJack is an online web application where a user can play the popular card game and socialize with friends.
+Want to enhance your blackjack skills without breaking the bank?
 BlackJack give the user the opportunity to play the game and increase their techniques without the risk of gambling their savings away.
 This application allows the user to play their favorite card game and socialize with others at their convenience.  
 
@@ -19,13 +17,14 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/codepoetchris/CPSC473-Project-2.git`
 * change into the new directory
 * `npm install`
 * `bower install`
 
 ## Running / Development
 
+* `node websockets-server.js`
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
@@ -45,7 +44,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+No deployment specification at this time.
 
 ## Further Reading / Useful Links
 
@@ -54,4 +53,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-

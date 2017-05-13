@@ -15,6 +15,36 @@
     {{content-for "head-footer"}}
   </head>
   <body class="body-container">
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId: '1052907681506731',
+          xfbml: true,
+          version: 'v2.9'
+        });
+
+        FB.getLoginStatus(function(response) {
+          if (response.status === 'connected') {
+            console.log('Logged in.');
+          }
+          else {
+            console.log('Not logged in');
+            // FB.login();
+          }
+        });
+
+        FB.AppEvents.logPageView();
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=1052907681506731";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
     {{content-for "body"}}
 
     <script src="assets/vendor.js"></script>

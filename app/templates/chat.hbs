@@ -1,4 +1,20 @@
-Welcome Chat!<br><br>
-
-Received Message: {{message}}<br>
-<button id="sendButtonPressed" {{action "sendButtonPressed"}}>Press Me</button>
+<h4>Chat</h4>
+<form {{action "sendButtonPressed" on="submit"}}>
+  <div>
+    <div>
+      {{#each model as |message|}}
+        <li>{{message.message}}</li>
+      {{/each}}
+    </div>
+    Received Message: {{message}}
+    <div>
+      <div class="form-group">
+        <label for="location">Location</label>
+          {{input value=model.message.message type="text"
+            class="form-control" name="location" required=true}}
+      </div>
+      <!-- <button id="sendButtonPressed" {{action "sendButtonPressed"}}>Press Me</button> -->
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary btn-block">Send</button>
+</form>

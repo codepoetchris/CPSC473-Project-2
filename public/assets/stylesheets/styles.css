@@ -19,8 +19,17 @@ header {
   background-color: inherit;
 }
 
+.game-header {
+  display: flex;
+  flex-direction: column;
+  flex-flow: initial;
+  justify-content: flex-end;
+  background-color: inherit;
+}
+
 .chat-header {
   display: flex;
+  justify-content: flex-start;
   color: white;
   width: 500px;
 }

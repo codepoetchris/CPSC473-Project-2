@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="/assets/stylesheets/styles.css">
+<div class="fb-login-button game-header" data-max-rows="1" data-size="medium"
+  data-button-type="continue_with" data-show-faces="false"
+  data-auto-logout-link="true" data-use-continue-as="false">
+</div>
+<div class="container chat-wrapper">
+  <!--Start of Blackjack-->
+  <div class="container" >
+    <div class="row whitefont">
+      Dealers Hand
+      <div class="top-align-text" id="dealerHand"></div>
+    </div>
+    <div class="row whitefont">
+      Players Hand
+      <div class="bottom-align-text" id="yourHand"></div>
+    </div>
+    <h3 class="whitefont">
+      <div id="yourScore">
+        Your Score: <span class="digits">0</span>
+        Record: <span id="wins">0</span>&nbsp;/&nbsp;<span id="losses">0</span></div>
+    </h3>
+    <button class="btn btn-primary" id="deal">Deal</button>
+    <button class="btn btn-success" id="hitMe">Hit</button>
+    <button class="btn btn-warning" id="stand">Stand</button>
+  </div>
+
+  <!--Start of Chat App-->
+  <div>
+    <header class="chat-header">
+      <h5>Online Chat:</h5>
+    </header>
+    <div class="panel panel-default chat-messages">
+      <ul class="panel-body chat-message-list" data-chat="message-list"></ul>
+    </div>
+    <div class="chat-input">
+      <form data-chat="chat-form" class="cb-container">
+        <div class="input-group">
+          <label for="js-message-input" class="sr-only">Message:</label>
+          <input type="text" class="form-control" data-chat="message-input" autofocus>
+          <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Go!</button>
+            </span>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{{outlet}}

@@ -1,6 +1,5 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<<<<<<< HEAD
 
 <head>
   <title>Blackjack</title>
@@ -63,59 +62,4 @@
   </div>
 </body>
 
-=======
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Blackjack</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    {{content-for "head"}}
-
-    <link rel="stylesheet" href="assets/vendor.css">
-    <link rel="stylesheet" href="assets/blackjack.css">
-
-    {{content-for "head-footer"}}
-  </head>
-  <body class="body-container">
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId: '1052907681506731',
-          xfbml: true,
-          version: 'v2.9'
-        });
-
-        FB.getLoginStatus(function(response) {
-          if (response.status === 'connected') {
-            console.log('Logged in.');
-          }
-          else {
-            console.log('Not logged in');
-            // FB.login();
-          }
-        });
-
-        FB.AppEvents.logPageView();
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=1052907681506731";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-    
-    {{content-for "body"}}
-
-    <script src="assets/vendor.js"></script>
-    <script src="assets/blackjack.js"></script>
-    <script src="assets/bj_logic.js"></script>
-
-    {{content-for "body-footer"}}
-  </body>
->>>>>>> master
 </html>

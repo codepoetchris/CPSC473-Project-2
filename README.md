@@ -24,6 +24,10 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
+If you're running the BlackJackDeal-UserFunctions branch only then you'll execute * `node index.js` and navigate to [http://localhost:30000](http://localhost:30000) to test the websocket requirement.
+
+Otherwise...
+
 * `node websockets-server.js`
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
